@@ -2,7 +2,7 @@
 
 $projects = [
     [
-        "project_name"   => "Interactieve Jukebox",
+        "project_name"   => "Jukebox",
         "project_slug"   => "jukebox",
         "project_type"   => "iot",
         "project_img"    => "/img/project-img/jukebox.jpg",
@@ -20,20 +20,20 @@ $projects = [
         "project_github" => "https://github.com/GitCommitt/Zweden-Project"
     ],
     [
-        "project_name"   => "Laravel Application Suite",
-        "project_slug"   => "laravel-application-suite",
+        "project_name"   => "Laravel Projecten",
+        "project_slug"   => "laravel-projecten",
         "project_type"   => "web",
         "project_img"    => "/img/project-img/t-shirt.jpg",
-        "project_cat"    => ["Laravel", "PHP", "Full-Stack"],
+        "project_cat"    => ["Laravel", "PHP"],
         "project_desc"   => "Een verzameling van mini-applicaties gebundeld in één overkoepelend Laravel-platform.",
         "project_github" => "https://github.com/GitCommitt/Laravel-M8"
     ],
     [
-        "project_name"   => "React Web Applications",
-        "project_slug"   => "react-web-applications",
+        "project_name"   => "React Projecten",
+        "project_slug"   => "react-projecten",
         "project_type"   => "web",
         "project_img"    => "/img/project-img/react.jpg",
-        "project_cat"    => ["React", "JavaScript", "UI/UX"],
+        "project_cat"    => ["React", "JavaScript"],
         "project_desc"   => "Onderzoek en realisatie van dynamische front-end componenten en dashboards met React.",
         "project_github" => "https://github.com/GitCommitt/React-M7"
     ]

@@ -1,6 +1,6 @@
 <?php
 $project = [
-    'project_name' => 'Laravel Projects',
+    'project_name' => 'Laravel Projecten',
     'project_img' => '/img/project-img/t-shirt.jpg',
     'project_cat' => ['Laravel', 'PHP'],
     'project_desc' => 'Een verzameling van mini-applicaties gebundeld in één overkoepelend Laravel-platform.',
