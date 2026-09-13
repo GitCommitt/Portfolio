@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+    --background: #f7f7f5;
+    --white: #ffffff;
+    --text: #17181b;
+    --muted: #777a80;
+    --accent: #456b9a;
+    --line: #dedfdf;
+    --sans: 'Space Grotesk', sans-serif;
+    --mono: 'DM Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f7f7f5;
+    color: #17181b;
+    font-family: var(--sans);
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    overflow: hidden;
+}
+
+.topbar,
+.hero,
+.section,
+footer {
+    width: min(1240px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110px;
+    padding-top: 12px;
+}
+
+.nav-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 10px 16px;
+    background: rgba(17, 18, 23, 0.04);
+    border: 1px solid rgba(17, 18, 23, 0.08);
+    border-radius: 999px;
+}
+
+.topbar a {
+    color: rgba(23, 24, 27, 0.8);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .02em;
+    transition: color .15s ease;
+}
+
+.topbar a:hover {
+    color: #111217;
+}
+
+.nav-badge {
+    display: inline-grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(17, 18, 23, 0.06);
+    color: rgba(23, 24, 27, 0.9);
+    font-size: 11px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 70px;
+    min-height: 640px;
+    padding: 40px 0 90px;
+}
+
+.profile-photo {
+    position: relative;
+    width: min(100%, 430px);
+    aspect-ratio: 1 / 1;
+    margin-left: auto;
+    overflow: hidden;
+    background: #f0f0f0;
+    border: 1px solid rgba(17, 18, 23, 0.08);
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    filter: none;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-copy {
+    max-width: 600px;
+}
+
+.hero-label {
+    margin: 0 0 18px;
+    color: rgba(23, 24, 27, 0.8);
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: .01em;
+}
+
+.hero-label span {
+    font-size: 1.1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(3.2rem, 5vw, 6.3rem);
+    font-weight: 700;
+    letter-spacing: -.07em;
+    line-height: .95;
+    color: #17181b;
+}
+
+.intro {
+    max-width: 500px;
+    margin: 24px 0 0;
+    color: rgba(23, 24, 27, 0.74);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 20px;
+    border-radius: 12px;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .04em;
+    transition: all .2s ease;
+}
+
+.primary-btn {
+    background: #101114;
+    color: #ffffff;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid rgba(17, 17, 20, 0.18);
+    color: rgba(17, 17, 20, 0.9);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-1px);
+}
+
+.section {
+    padding: 72px 0;
+    border-top: 1px solid var(--line);
+}
+
+.section-head {
+    margin-bottom: 35px;
+}
+
+.section-kicker {
+    margin: 0 0 18px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 0;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    letter-spacing: -.07em;
+    line-height: .9;
+}
+
+.project-list {
+    border-top: 1px solid var(--text);
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 30px;
+    gap: 20px;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.project-number,
+.project-type {
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 11px;
+}
+
+.project-title {
+    font-size: clamp(1.3rem, 2.5vw, 2.1rem);
+    letter-spacing: -.04em;
+}
+
+.project-arrow {
+    font-size: 22px;
+    text-align: right;
+}
+
+.project:hover .project-title {
+    color: var(--accent);
+}
+
+.iot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 30px;
+}
+
+.iot-card {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--text);
+    padding-top: 14px;
+}
+
+.iot-photo {
+    aspect-ratio: 16 / 10;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: #e7e8e8;
+    border: 1px solid var(--line);
+}
+
+.iot-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.iot-card h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    letter-spacing: -.05em;
+}
+
+.iot-card p {
+    min-height: 52px;
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.project-button {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 18px;
+    margin-bottom: 24px;
+    padding: 10px 13px;
+    border: 1px solid var(--line);
+    font-family: var(--mono);
+    font-size: 11px;
+}
+
+.project-button span {
+    color: var(--accent);
+}
+
+.project-button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.iot-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 11px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: end;
+    padding-bottom: 110px;
+}
+
+.contact h2 {
+    max-width: 650px;
+}
+
+.contact-links {
+    display: grid;
+    min-width: 310px;
+    gap: 8px;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 16px;
+    border: 1px solid var(--line);
+    font-family: var(--mono);
+    font-size: 11px;
+}
+
+.github contact-link {
+    color: grey;
+}
+
+.contact-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0 28px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 10px;
+}
+
+@media (max-width: 700px) {
+    .topbar,
+    .hero,
+    .section,
+    footer {
+        width: calc(100% - 40px);
+    }
+
+    .topbar {
+        height: 65px;
+        gap: 15px;
+    }
+
+    .topbar a {
+        font-size: 10px;
+    }
+
+    .hero {
+        display: block;
+        min-height: auto;
+        padding: 70px 0 90px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 155px;
+        margin-bottom: 35px;
+    }
+
+    h1 {
+        font-size: clamp(4rem, 19vw, 7rem);
+    }
+
+    .intro {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .project {
+        grid-template-columns: 34px 1fr 25px;
+        gap: 10px;
+    }
+
+    .project-type {
+        display: none;
+    }
+
+    .iot-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .iot-photo {
+        min-height: 220px;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact-links {
+        min-width: 0;
+        margin-top: 35px;
+    }
+
+    footer {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
