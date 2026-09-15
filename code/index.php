@@ -1,3 +1,5 @@
+<?php include __DIR__ . "/assets/project-data/home-projects.php" ?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -7,26 +9,43 @@
     <meta name="description"
         content="Portfolio van een maker die digitale ervaringen helder, speels en menselijk maakt.">
     <title>Portfolio | Daan Pronk</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script defer src="/assets/javascript/script.js"></script>
 </head>
 
 <body>
     <div class="page">
         <main>
-            <?php include("header.php") ?>
+            <?php include __DIR__ . "/assets/header.php" ?>
             <header class="hero" id="home">
                 <div class="hero-copy">
+                    <h2>Daan Pronk</h2>
                     <h1>Software Developer</h1>
-                    <p class="intro">Media College 4e jaars student.</p>
+                    <p class="intro">Media College 3e jaars student.</p>
                     <div class="hero-actions">
                         <a class="primary-btn" href="#contact">Contact</a>
                         <a class="secondary-btn" href="#projecten">Bekijk mijn werk</a>
                     </div>
                 </div>
 
-                <div class="profile-photo">
-                    <img src="img/selfie.jpg" alt="Portret van Daan Pronk">
+                <div class="hero-profile">
+                    <div class="profile-photo">
+                        <img src="/assets/img/selfie.jpg" alt="Portret van Daan Pronk">
+                    </div>
+                    <div class="hero-skills" aria-labelledby="skills-title">
+                        <h2 id="skills-title">Mijn skills</h2>
+                        <div class="skills-list">
+                            <a class="skill-item" href="/project-page/projects.php?filter=html-css">HTML & CSS</a>
+                            <a class="skill-item" href="/project-page/projects.php?filter=javascript">JavaScript</a>
+                            <a class="skill-item" href="/project-page/projects.php?filter=php">PHP</a>
+                            <a class="skill-item" href="/project-page/projects.php?filter=csharp">C#</a>
+                            <a class="skill-item" href="/project-page/projects.php?filter=laravel">Laravel</a>
+                            <a class="skill-item" href="/project-page/projects.php?filter=react">React</a>
+                            <a class="skill-item" href="/project-page/projects.php?filter=sql">SQL</a>
+                            <a class="skill-item" href="/project-page/projects.php?filter=yaml">YAML</a>
+                            <a class="skill-item" href="/project-page/projects.php?filter=all">Git</a>
+                        </div>
+                    </div>
                 </div>
             </header>
             <section class="section">
@@ -36,29 +55,12 @@
                     </div>
                 </div>
                 <div class="project-list">
-                    <a class="project" href="https://github.com/ghostbusterbob/SpaceYugis">
-                        <span class="project-number">01</span>
-                        <span class="project-title">Arcade Game & IOT</span>
-                        <span class="project-type">Game — IOT</span>
-                        <span class="project-arrow">↗</span>
-                    </a>
-                    <a class="project" href="https://github.com/GitCommitt/Muse-Museum-M8">
-                        <span class="project-number">02</span>
-                        <span class="project-title">Amsterdam Muse Museum</span>
-                        <span class="project-type">IOT — 3D</span>
-                        <span class="project-arrow">↗</span>
-                    </a>
-                    <a class="project" href="https://github.com/GitCommitt/ESPHome-Projects">
-                        <span class="project-number">03</span>
-                        <span class="project-title">ESPHome Projects</span>
-                        <span class="project-type">IOT — ESP32</span>
-                        <span class="project-arrow">↗</span>
-                    </a>
+                    <?php include __DIR__ . "/assets/cards/recent-werk-card.php" ?>
                 </div>
             </section>
             <section class="section" id="projecten">
                 <div class="section-head">
-                    <h2>Projecten</h2>
+                    <h2>beste projecten</h2>
                     <div class="filter-bar">
                         <button class="filter-btn active" data-filter="all">Alles</button>
                         <button class="filter-btn" data-filter="web">Web & Apps</button>
@@ -67,7 +69,7 @@
                 </div>
 
                 <div class="projects-grid">
-                    <?php include("project-card.php") ?>
+                    <?php include __DIR__ . "/assets/cards/project-card.php" ?>
                 </div>
 
                 <div class="projects-footer">
@@ -80,13 +82,11 @@
                     <h2>Meer projecten<br>op mijn github</h2>
                 </div>
                 <div class="contact-links">
-                    <a class="contact-link" href="https://github.com/GitCommitt" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="contact-link" href="https://github.com/GitCommitt">
                         <span>GitHub</span>
                         <span>↗</span>
                     </a>
-                    <a class="contact-link" href="https://www.linkedin.com/in/jouw-naam" target="_blank"
-                        rel="noopener noreferrer">
+                    <a class="contact-link" href="https://www.linkedin.com/in/jouw-naam">
                         <span>LinkedIn</span>
                         <span>↗</span>
                     </a>
@@ -97,9 +97,8 @@
                 </div>
             </section>
 
-            <footer>
-                <span>2026 — Daan Pronk</span>
-            </footer>
+            <?php include __DIR__ . "/assets/footer.php" ?>
+            
         </main>
     </div>
 </body>

@@ -2,8 +2,8 @@
     <div class="nav-pill">
         <a href="/index.php">Home</a>
         <span>|</span>
-        <a href="#projecten">Projecten</a>
+        <a href="/project-page/projects.php">Projecten</a>
         <span>|</span>
-        <a href="#contact">About</a>
+        <a href="/about-me.php">About</a>
     </div>
 </nav>

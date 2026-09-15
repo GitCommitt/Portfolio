@@ -6,7 +6,9 @@ document.querySelectorAll('.filter-btn').forEach(button => {
         const filter = button.getAttribute('data-filter');
 
         document.querySelectorAll('.project-card').forEach(card => {
-            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            const categories = card.getAttribute('data-category').split('|');
+
+            if (filter === 'all' || categories.includes(filter)) {
                 card.style.display = 'block';
             } else {
                 card.style.display = 'none';
@@ -14,3 +16,11 @@ document.querySelectorAll('.filter-btn').forEach(button => {
         });
     });
 });
+
+const filterFromUrl = new URLSearchParams(window.location.search).get('filter');
+const filterButton = [...document.querySelectorAll('.filter-btn')]
+    .find(button => button.getAttribute('data-filter') === filterFromUrl);
+
+if (filterButton) {
+    filterButton.click();
+}

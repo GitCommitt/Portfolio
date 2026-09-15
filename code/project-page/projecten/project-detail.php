@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?= $project['project_desc'] ?>">
     <title><?= $project['project_name'] ?> | Daan Pronk</title>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
-    <?php include("../../header.php") ?>
+    <?php include __DIR__ . "/../../assets/header.php" ?>
 
     <main class="project-detail">
         <a class="back-link" href="/project-page/projects.php">← Alle projecten</a>
@@ -47,7 +47,7 @@
         </section>
     </main>
 
-    <?php include("../../footer.php") ?>
+    <?php include __DIR__ . "/../../assets/footer.php" ?>
 </body>
 
 </html>
