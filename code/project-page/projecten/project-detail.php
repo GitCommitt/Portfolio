@@ -24,14 +24,41 @@
                         <span><?= $category?></span>
                     <?php endforeach; ?>
                 </div>
-                <h1><?= $project['project_name'] ?></h1>
-                <p class="project-detail-intro"><?= $project['project_desc'] ?></p>
-                <div class="project-detail-actions">
-                    <a class="primary-btn" href="<?= $project['project_github']?>">Bekijk op GitHub ↗</a>
-                </div>
+            <h1><?= $project['project_name'] ?></h1>
+            <div style="margin-top: 40px;" class="card-actions">
+                <a class="btn-card" style="display:<?= $project['show_live'] ?>;" href="<?= $project['project_live'] ?>">
+                    Link naar Live<span>↗</span>
+                </a>
+                <a target="_blank" href="<?= $project['project_github'] ?>" class="btn-card secondary">
+                    Github<span>↗</span>
+                </a>
+            </div>
             </div>
             <div class="project-detail-image">
-                <img src="<?= $project['project_img']?>">
+                <a class="project-detail-image-link" href="#project-main-photo">
+                    <img src="<?= $project['project_img'] ?>" alt="Foto van <?= $project['project_name'] ?>">
+                </a>
+                <div class="project-lightbox" id="project-main-photo">
+                    <a class="project-lightbox-backdrop" href="#" aria-label="Sluit grote foto"></a>
+                    <div class="project-lightbox-content">
+                        <a class="project-lightbox-close" href="#" aria-label="Sluit grote foto">&times;</a>
+                        <img src="<?= $project['project_img'] ?>" alt="Grote foto van <?= $project['project_name'] ?>">
+                    </div>
+                </div>
+            </div>
+            <div class="project-detail-gallery">
+                <?php foreach (($project['project_gallery'] ?? [$project['project_img']]) as $galleryIndex => $galleryImage): ?>
+                    <a class="project-detail-gallery-link" href="#project-photo-<?= $galleryIndex ?>">
+                        <img src="<?= $galleryImage ?>" alt="Foto van <?= $project['project_name'] ?>" loading="lazy">
+                    </a>
+                    <div class="project-lightbox" id="project-photo-<?= $galleryIndex ?>">
+                        <a class="project-lightbox-backdrop" href="#" aria-label="Sluit grote foto"></a>
+                        <div class="project-lightbox-content">
+                            <a class="project-lightbox-close" href="#" aria-label="Sluit grote foto">&times;</a>
+                            <img src="<?= $galleryImage ?>" alt="Grote foto van <?= $project['project_name'] ?>">
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </section>
 

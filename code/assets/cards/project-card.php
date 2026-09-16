@@ -5,7 +5,6 @@ foreach ($projects as $project):
     <article class="project-card" data-category="<?= implode('|', array_unique($projectTypes))?>">
         <div class="card-image">
             <img src="<?= $project['project_img'] ?>" alt="<?= $project['project_name'] ?>">
-            <span class="card-badge">2026</span>
         </div>
         <div class="card-content">
             <div class="card-tags">

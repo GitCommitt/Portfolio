@@ -38,7 +38,7 @@
                             <a class="skill-item" href="/project-page/projects.php?filter=html-css">HTML & CSS</a>
                             <a class="skill-item" href="/project-page/projects.php?filter=javascript">JavaScript</a>
                             <a class="skill-item" href="/project-page/projects.php?filter=php">PHP</a>
-                            <a class="skill-item" href="/project-page/projects.php?filter=csharp">C#</a>
+                            <a class="skill-item" href="/project-page/projects.php?filter=cplusplus">C++</a>
                             <a class="skill-item" href="/project-page/projects.php?filter=laravel">Laravel</a>
                             <a class="skill-item" href="/project-page/projects.php?filter=react">React</a>
                             <a class="skill-item" href="/project-page/projects.php?filter=sql">SQL</a>
