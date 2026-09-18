@@ -13,7 +13,7 @@ $projects = [
     [
         "project_name"   => "Zweden × Nederland",
         "project_slug"   => "zweden-nederland",
-        "project_type"   => ["web", "php", "html-css", "sql"],
+        "project_type"   => ["web", "php", "html-css"],
         "project_img"    => "/assets/img/project-img/zweden/1-zweden.jpg",
         "project_cat"    => ["PHP", "Internationaal", "Samenwerking"],
         "project_desc"   => "Dit is een internationale samenwerking tussen zweedse studenten. Ook een samenwerking tussen verschillende opledingen",
@@ -29,8 +29,8 @@ $projects = [
         "project_github" => "https://github.com/GitCommitt/Laravel-M8"
     ],
     [
-        "project_name"   => "React Projecten",
-        "project_slug"   => "react-projecten",
+        "project_name"   => "React Project",
+        "project_slug"   => "react-project",
         "project_type"   => ["web", "react", "javascript", "html-css"],
         "project_img"    => "/assets/img/project-img/react/1-react.jpg",
         "project_cat"    => ["React", "JavaScript", "SQL"],

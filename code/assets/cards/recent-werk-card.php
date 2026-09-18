@@ -3,20 +3,20 @@
 $recentWerk = [
     [
         "number" => "01",
-        "project_name" => "Arcader Game & IOT",
-        "project_tags" => ["Game", "IOT"],
+        "project_name" => "Arcadegame & IoT",
+        "project_tags" => ["Game", "IoT"],
         "project_github" => "https://github.com/ghostbusterbob/SpaceYugis"
     ],
     [
         "number" => "02",
-        "project_name" => "Amsterdam Muse Museum",
-        "project_tags" => ["IOT", "3D"],
+        "project_name" => "Amsterdam Museum",
+        "project_tags" => ["IoT", "3D"],
         "project_github" => "https://github.com/GitCommitt/Muse-Museum-M8"
     ],
     [
         "number" => "03",
         "project_name" => "ESPHome Projects",
-        "project_tags" => ["IOT", "ESP32"],
+        "project_tags" => ["IoT", "ESP32"],
         "project_github" => "https://github.com/GitCommitt/ESPHome-Projects"
     ]
 ];

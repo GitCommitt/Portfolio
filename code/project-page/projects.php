@@ -1,7 +1,7 @@
 <?php include __DIR__ . "/../assets/project-data/projecten.php" ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -21,9 +21,9 @@
                             <button class="filter-btn" data-filter="php">PHP</button>
                             <button class="filter-btn" data-filter="cplusplus">C++</button>
                             <button class="filter-btn" data-filter="laravel">Laravel</button>
-                            <button class="filter-btn" data-filter="react">React</button>
+                            <button class="filter-btn" data-filter="javascript">Javascript</button>
                             <button style="display: none;" class="filter-btn" data-filter="html-css">HTML & CSS</button>
-                            <button style="display: none;" class="filter-btn" data-filter="javascript">JavaScript</button>
+                            <button style="display: none;" class="filter-btn" data-filter="react">React</button>
                             <button style="display: none;" class="filter-btn" data-filter="sql">SQL</button>
                             <button style="display: none;" class="filter-btn" data-filter="yaml">YAML</button>
                         </div>

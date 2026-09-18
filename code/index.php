@@ -21,7 +21,7 @@
                 <div class="hero-copy">
                     <h2>Daan Pronk</h2>
                     <h1>Software Developer</h1>
-                    <p class="intro">Media College 3e jaars student.</p>
+                    <p class="intro">Derdejaarsstudent aan het Media College.</p>
                     <div class="hero-actions">
                         <a class="primary-btn" href="#contact">Contact</a>
                         <a class="secondary-btn" href="#projecten">Bekijk mijn werk</a>
@@ -33,7 +33,7 @@
                         <img src="/assets/img/selfie.jpg" alt="Portret van Daan Pronk">
                     </div>
                     <div class="hero-skills" aria-labelledby="skills-title">
-                        <h2 id="skills-title">Mijn skills</h2>
+                        <h2 id="skills-title">Mijn vaardigheden</h2>
                         <div class="skills-list">
                             <a class="skill-item" href="/project-page/projects.php?filter=html-css">HTML & CSS</a>
                             <a class="skill-item" href="/project-page/projects.php?filter=javascript">JavaScript</a>
@@ -51,7 +51,7 @@
             <section class="section">
                 <div class="section-head">
                     <div>
-                        <h2>recent werk</h2>
+                        <h2>Recent werk</h2>
                     </div>
                 </div>
                 <div class="project-list">
@@ -60,7 +60,7 @@
             </section>
             <section class="section" id="projecten">
                 <div class="section-head">
-                    <h2>beste projecten</h2>
+                    <h2>Beste projecten</h2>
                     <div class="filter-bar">
                         <button class="filter-btn active" data-filter="all">Alles</button>
                         <button class="filter-btn" data-filter="web">Web & Apps</button>
@@ -79,7 +79,7 @@
 
             <section class="section contact" id="contact">
                 <div>
-                    <h2>Meer projecten<br>op mijn github</h2>
+                        <h2>Meer projecten<br>op mijn GitHub</h2>
                 </div>
                 <div class="contact-links">
                     <a class="contact-link" href="https://github.com/GitCommitt">

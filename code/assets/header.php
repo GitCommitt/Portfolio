@@ -4,6 +4,6 @@
         <span>|</span>
         <a href="/project-page/projects.php">Projecten</a>
         <span>|</span>
-        <a href="/about-me.php">About</a>
+        <a href="/about-me.php">Over mij</a>
     </div>
 </nav>
