@@ -20,7 +20,7 @@
 
             <section class="section contact" id="contact">
                 <div>
-                    <h2>Meer projecten<br>op mijn github</h2>
+                    <h2>Meer projecten<br>op mijn GitHub</h2>
                 </div>
                 <div class="contact-links">
                     <a class="contact-link" href="https://github.com/GitCommitt">

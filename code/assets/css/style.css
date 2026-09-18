@@ -22,8 +22,8 @@ html {
 body {
     width: 100%;
     margin: 0;
-    background: #f7f7f5;
-    color: #17181b;
+    background: var(--background);
+    color: var(--text);
     font-family: var(--sans);
     line-height: 1.5;
     overflow-x: hidden;
@@ -455,10 +455,6 @@ h2 {
     overflow: hidden;
 }
 
-.project-card:hover {
-    transform: translateY(-4px);
-}
-
 .card-image {
     position: relative;
     width: 100%;
@@ -472,10 +468,6 @@ h2 {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-}
-
-.project-card:hover .card-image img {
-    transform: scale(1.03);
 }
 
 .card-badge {
@@ -643,6 +635,8 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
     grid-column: 2;
+    width: 75%;
+    justify-self: right;
 }
 
 .project-detail-gallery-link {

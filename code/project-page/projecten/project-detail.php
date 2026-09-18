@@ -26,11 +26,11 @@
                 </div>
             <h1><?= $project['project_name'] ?></h1>
             <div style="margin-top: 40px;" class="card-actions">
-                <a class="btn-card" style="display:<?= $project['show_live'] ?>;" href="<?= $project['project_live'] ?>">
-                    Link naar Live<span>↗</span>
+                <a target="_blank" class="btn-card" style="display:<?= $project['show_live'] ?>;" href="<?= $project['project_live'] ?>">
+                    Bekijk de liveversie<span>↗</span>
                 </a>
                 <a target="_blank" href="<?= $project['project_github'] ?>" class="btn-card secondary">
-                    Github<span>↗</span>
+                    GitHub<span>↗</span>
                 </a>
             </div>
             </div>
