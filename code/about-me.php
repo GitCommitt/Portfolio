@@ -65,7 +65,7 @@
                         <span>Daanpronk570@gmail.com</span>
                         <span>↗</span>
                     </a>
-                    <a class="contact-link" href="https://github.com/GitCommitt">
+                    <a target="_blank" class="contact-link" href="https://github.com/GitCommitt">
                         <span>GitHub</span>
                         <span>↗</span>
                     </a>

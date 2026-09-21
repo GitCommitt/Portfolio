@@ -1,9 +1,9 @@
 <nav class="topbar" aria-label="Hoofdnavigatie">
     <div class="nav-pill">
-        <a href="/index.php">Home</a>
+        <a href="/">Home</a>
         <span>|</span>
-        <a href="/project-page/projects.php">Projecten</a>
+        <a href="/projecten">Projecten</a>
         <span>|</span>
-        <a href="/about-me.php">Over mij</a>
+        <a href="/about-me">Over mij</a>
     </div>
 </nav>

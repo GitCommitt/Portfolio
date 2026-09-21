@@ -22,7 +22,7 @@ $recentWerk = [
 ];
 
 foreach ($recentWerk as $rWerk): ?>
-    <a class="project" href="<?= $rWerk["project_github"] ?>">
+    <a target="_blank" class="project" href="<?= $rWerk["project_github"] ?>">
         <span class="project-number"><?= $rWerk["number"] ?></span>
         <span class="project-title"><?= $rWerk["project_name"] ?></span>
         <span class="card-tags">

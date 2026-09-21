@@ -21,7 +21,7 @@
                 <div class="hero-copy">
                     <h2>Daan Pronk</h2>
                     <h1>Software Developer</h1>
-                    <p class="intro">Derdejaarsstudent aan het Media College.</p>
+                    <p class="intro">3de Jaars student aan het Media College.</p>
                     <div class="hero-actions">
                         <a class="primary-btn" href="#contact">Contact</a>
                         <a class="secondary-btn" href="#projecten">Bekijk mijn werk</a>
@@ -35,15 +35,15 @@
                     <div class="hero-skills" aria-labelledby="skills-title">
                         <h2 id="skills-title">Mijn vaardigheden</h2>
                         <div class="skills-list">
-                            <a class="skill-item" href="/project-page/projects.php?filter=html-css">HTML & CSS</a>
-                            <a class="skill-item" href="/project-page/projects.php?filter=javascript">JavaScript</a>
-                            <a class="skill-item" href="/project-page/projects.php?filter=php">PHP</a>
-                            <a class="skill-item" href="/project-page/projects.php?filter=cplusplus">C++</a>
-                            <a class="skill-item" href="/project-page/projects.php?filter=laravel">Laravel</a>
-                            <a class="skill-item" href="/project-page/projects.php?filter=react">React</a>
-                            <a class="skill-item" href="/project-page/projects.php?filter=sql">SQL</a>
-                            <a class="skill-item" href="/project-page/projects.php?filter=yaml">YAML</a>
-                            <a class="skill-item" href="/project-page/projects.php?filter=all">Git</a>
+                            <a class="skill-item" href="/projecten?filter=html-css">HTML & CSS</a>
+                            <a class="skill-item" href="/projecten?filter=javascript">JavaScript</a>
+                            <a class="skill-item" href="/projecten?filter=php">PHP</a>
+                            <a class="skill-item" href="/projecten?filter=cplusplus">C++</a>
+                            <a class="skill-item" href="/projecten?filter=laravel">Laravel</a>
+                            <a class="skill-item" href="/projecten?filter=react">React</a>
+                            <a class="skill-item" href="/projecten?filter=sql">SQL</a>
+                            <a class="skill-item" href="/projecten?filter=yaml">YAML</a>
+                            <a class="skill-item" href="/projecten?filter=all">Git</a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="projects-footer">
-                    <a class="primary-btn" href="/project-page/projects.php">Bekijk meer projecten ↗</a>
+                    <a class="primary-btn" href="/projecten">Bekijk meer projecten ↗</a>
                 </div>
             </section>
 
@@ -82,7 +82,7 @@
                         <h2>Meer projecten<br>op mijn GitHub</h2>
                 </div>
                 <div class="contact-links">
-                    <a class="contact-link" href="https://github.com/GitCommitt">
+                    <a target="_blank" class="contact-link" href="https://github.com/GitCommitt">
                         <span>GitHub</span>
                         <span>↗</span>
                     </a>

@@ -15,7 +15,7 @@
     <?php include __DIR__ . "/../../assets/header.php" ?>
 
     <main class="project-detail">
-        <a class="back-link" href="/project-page/projects.php">← Alle projecten</a>
+        <a class="back-link" href="/projecten">← Alle projecten</a>
 
         <section class="project-detail-hero">
             <div class="project-detail-copy">

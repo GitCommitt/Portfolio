@@ -15,7 +15,7 @@ foreach ($projects as $project):
             <h3><?= $project['project_name'] ?></h3>
             <p><?= $project['project_desc'] ?></p>
             <div class="card-actions">
-                <a class="btn-card" href="/project-page/projecten/<?= $project['project_slug'] ?>.php">
+                <a class="btn-card" href="/project/<?= $project['project_slug'] ?>">
                     Info <span>↗</span>
                 </a>
                 <a target="_blank" class="btn-card secondary" href="<?= $project['project_github'] ?>">

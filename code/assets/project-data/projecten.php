@@ -7,7 +7,7 @@ $projects = [
         "project_type"   => ["cplusplus"],
         "project_img"    => "/assets/img/project-img/jukebox/1-jukebox.jpg",
         "project_cat"    => ["Arduino", "Sensoren", "Audio"],
-        "project_desc"   => "Dit is een interactieve jukebox die muziek afspeelt op basis van de kleur van het muntje dat in de jukebox wordt gedaan.",
+        "project_desc"   => "Dit is een interactieve jukebox die muziek afspeelt aan de hand van welk kleuren muntje er in de jukebox word gedaan.",
         "project_github" => "https://github.com/GitCommitt/DP-Jukebox"
     ],
     [

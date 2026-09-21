@@ -16,7 +16,7 @@ $projects = [
         "project_type"   => ["web", "php", "html-css"],
         "project_img"    => "/assets/img/project-img/zweden/1-zweden.jpg",
         "project_cat"    => ["PHP", "Internationaal", "Samenwerking"],
-        "project_desc"   => "Dit is een internationale samenwerking tussen zweedse studenten. Ook een samenwerking tussen verschillende opledingen",
+        "project_desc"   => "Dit is een internationale samenwerking met Zweedse studenten en studenten van verschillende opleidingen.",
         "project_github" => "https://github.com/GitCommitt/Zweden-Project"
     ],
     [
@@ -25,7 +25,7 @@ $projects = [
         "project_type"   => ["web", "laravel", "php", "sql"],
         "project_img"    => "/assets/img/project-img/laravel/1-laravel.jpg",
         "project_cat"    => ["Laravel", "PHP", "SQL"],
-        "project_desc"   => "Dit is een verzamling van allemaal verschillende mini projecten en een eind project waarbij er een tshirt website is gebouwd in de programmeer taal laravel.",
+        "project_desc"   => "Dit is een verzameling van verschillende miniprojecten en een eindproject waarin een T-shirtwebsite is gebouwd met de programmeertaal Laravel.",
         "project_github" => "https://github.com/GitCommitt/Laravel-M8"
     ],
     [
@@ -34,7 +34,7 @@ $projects = [
         "project_type"   => ["web", "react", "javascript", "html-css"],
         "project_img"    => "/assets/img/project-img/react/1-react.jpg",
         "project_cat"    => ["React", "JavaScript", "SQL"],
-        "project_desc"   => "In dit project zijn er verschillende componenten in 1 project toegevoegd. Hiervoor is react gebruikt. Dit is ook de eerste keer dat ik react heb gebruikt.",
+        "project_desc"   => "In dit project zijn verschillende componenten samengebracht. Hiervoor is React gebruikt. Dit was ook de eerste keer dat ik met React werkte.",
         "project_github" => "https://github.com/GitCommitt/React-M7"
     ]
 ];
