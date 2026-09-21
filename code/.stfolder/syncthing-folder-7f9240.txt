@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: a9ato-cslhz
+created: 2026-09-18T12:07:01+02:00

@@ -24,3 +24,37 @@ const filterButton = [...document.querySelectorAll('.filter-btn')]
 if (filterButton) {
     filterButton.click();
 }
+
+const rotatingImage = document.querySelector('.about-rotating-image');
+const aboutImages = [
+    '/assets/img/selfie-1.jpg',
+    '/assets/img/selfie-2.jpg',
+    '/assets/img/selfie-3.jpg'
+];
+
+if (rotatingImage && aboutImages.length > 1) {
+    Promise.all(aboutImages.map(source => new Promise(resolve => {
+        const image = new Image();
+        image.onload = () => resolve(source);
+        image.onerror = () => resolve(null);
+        image.src = source;
+    }))).then(loadedImages => {
+        const availableImages = loadedImages.filter(Boolean);
+
+        if (availableImages.length < 2) {
+            return;
+        }
+
+        let imageIndex = 0;
+
+        window.setInterval(() => {
+            rotatingImage.style.opacity = '0';
+
+            window.setTimeout(() => {
+                imageIndex = (imageIndex + 1) % availableImages.length;
+                rotatingImage.src = availableImages[imageIndex];
+                rotatingImage.style.opacity = '1';
+            }, 450);
+        }, 5000);
+    });
+}

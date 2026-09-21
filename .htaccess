@@ -1,6 +1,0 @@
-RewriteEngine On
-
-RewriteRule ^$ code/index.php [L]
-RewriteRule ^index\.php$ code/index.php [L]
-RewriteRule ^assets/(.*)$ code/assets/$1 [L]
-RewriteRule ^project-page/(.*)$ code/project-page/$1 [L]
