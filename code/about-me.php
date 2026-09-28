@@ -18,7 +18,7 @@
 
             <header class="about-hero">
                 <div class="about-intro">
-                    <h1>Infor over mij</h1>
+                    <h1>Info over mij</h1>
                     <p class="intro">Mijn naam is Daan Pronk en software is mijn passie. Of het nu gaat om het schrijven van code, het solderen van componenten of het lezen van documentatie: ik wil altijd weten hoe de techniek achter de schermen werkt. Naast deze zelfstandige focus werk ik ontzettend graag in teamverband. Ik geniet ervan om samen ideeën te bedenken, creativiteit te bundelen en de leiding te nemen. Met goede communicatie zorg ik ervoor dat alles vlekkeloos verloopt.</p>
                     <div class="hero-actions">
                         <a class="primary-btn" href="mailto:daanpronk570@gmail.com">Stuur een bericht <span aria-hidden="true">↗</span></a>
@@ -52,23 +52,6 @@
                         <h3>Documentatie lezen</h3>
                         <p>Ik lees graag documentatie om te begrijpen hoe soft/hardware achter de schermen werkt en hoe ik die goed kan toepassen.</p>
                     </article>
-                </div>
-            </section>
-
-            <section class="section contact" id="contact">
-                <div>
-                    <p class="section-kicker">Contact</p>
-                    <h2>Heb je een idee?<br>Praat met me.</h2>
-                </div>
-                <div class="contact-links">
-                    <a class="contact-link" href="mailto:daanpronk570@gmail.com">
-                        <span>Daanpronk570@gmail.com</span>
-                        <span>↗</span>
-                    </a>
-                    <a target="_blank" class="contact-link" href="https://github.com/GitCommitt">
-                        <span>GitHub</span>
-                        <span>↗</span>
-                    </a>
                 </div>
             </section>
 

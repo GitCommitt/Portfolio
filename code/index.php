@@ -77,26 +77,6 @@
                 </div>
             </section>
 
-            <section class="section contact" id="contact">
-                <div>
-                        <h2>Meer projecten<br>op mijn GitHub</h2>
-                </div>
-                <div class="contact-links">
-                    <a target="_blank" class="contact-link" href="https://github.com/GitCommitt">
-                        <span>GitHub</span>
-                        <span>↗</span>
-                    </a>
-                    <a class="contact-link" href="https://www.linkedin.com/in/jouw-naam">
-                        <span>LinkedIn</span>
-                        <span>↗</span>
-                    </a>
-                    <a style="width: 100%;" class="contact-link" href="mailto:daanpronk570@gmail.com">
-                        <span>Daanpronk570@gmail.com</span>
-                        <span>→</span>
-                    </a>
-                </div>
-            </section>
-
             <?php include __DIR__ . "/assets/footer.php" ?>
             
         </main>

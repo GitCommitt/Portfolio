@@ -5,5 +5,7 @@
         <a href="/projecten">Projecten</a>
         <span>|</span>
         <a href="/about-me">Over mij</a>
+        <span>|</span>
+        <a href="#contact">Contact</a>
     </div>
 </nav>

@@ -490,6 +490,19 @@ h2 {
     font-size: 11px;
 }
 
+.contact-link-cv {
+    background: #17181b;
+    border-color: #17181b;
+    color: var(--white);
+    box-shadow: 0 12px 24px rgba(23, 24, 27, 0.12);
+}
+
+.contact-link-cv:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
+}
+
 .github contact-link {
     color: grey;
 }
@@ -657,7 +670,17 @@ h2 {
 .project-detail {
     width: min(1240px, calc(100% - 48px));
     margin: 0 auto;
-    padding: 40px 0 100px;
+    padding: 40px 0 60px;
+}
+
+.project-detail .card-actions {
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.project-detail .btn-card {
+    padding: 12px 18px;
+    font-size: 12px;
 }
 
 .back-link {
@@ -675,11 +698,18 @@ h2 {
 
 .project-detail-hero {
     display: grid;
-    grid-template-columns: .9fr 1.1fr;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
     align-items: center;
     column-gap: 70px;
     row-gap: 8px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
+}
+
+.project-detail-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .project-detail-copy .card-tags {
@@ -688,6 +718,11 @@ h2 {
 
 .project-detail-copy h1 {
     max-width: 700px;
+    margin: 0;
+}
+
+.project-detail-copy .section-kicker {
+    margin: 28px 0 12px;
 }
 
 .project-detail-intro {
@@ -700,6 +735,12 @@ h2 {
 
 .project-detail-actions {
     margin-top: 32px;
+}
+
+.project-detail-visuals {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .project-detail-image {
@@ -726,7 +767,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
-    grid-column: 2;
     width: 75%;
     justify-self: right;
 }
@@ -822,6 +862,13 @@ h2 {
 
 .project-detail-text p {
     margin: 0 0 20px;
+}
+
+.card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
 }
 
 footer {
