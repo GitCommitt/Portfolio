@@ -21,7 +21,7 @@
                 <div class="hero-copy">
                     <h2>Daan Pronk</h2>
                     <h1>Software Developer</h1>
-                    <p class="intro">3de Jaars student aan het Media College.</p>
+                    <p class="intro">3ᵉ Jaars student aan het Mediacollege Amsterdam.</p>
                     <div class="hero-actions">
                         <a class="primary-btn" href="#contact">Contact</a>
                         <a class="secondary-btn" href="#projecten">Bekijk mijn werk</a>
