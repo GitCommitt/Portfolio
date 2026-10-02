@@ -29,12 +29,12 @@ $projects = [
         "project_github" => "https://github.com/GitCommitt/Laravel-M8"
     ],
     [
-        "project_name"   => "React Project",
-        "project_slug"   => "react-project",
-        "project_type"   => ["web", "react", "javascript", "html-css"],
-        "project_img"    => "/assets/img/project-img/react/1-react.jpg",
-        "project_cat"    => ["React", "JavaScript", "SQL"],
-        "project_desc"   => "In dit project zijn verschillende componenten samengebracht. Hiervoor is React gebruikt. Dit was ook de eerste keer dat ik met React werkte.",
-        "project_github" => "https://github.com/GitCommitt/React-M7"
+        "project_name"   => "Credit Store",
+        "project_slug"   => "credit-shop",
+        "project_type"   => ["php", "JavaScript", "html-css"],
+        "project_img"    => "/assets/img/project-img/credit-shop/1-credit-shop.jpg",
+        "project_cat"    => ["html-css", "JavaScript", "Cache"],
+        "project_desc"   => "In dit project is er een webshop gemaakt die de data van de producten opslaat in de cache. Met een admin panel om de producten te beheren.",
+        "project_github" => "https://github.com/GitCommitt/credit-shop"
     ]
 ];

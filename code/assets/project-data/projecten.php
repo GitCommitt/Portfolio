@@ -29,6 +29,24 @@ $projects = [
         "project_github" => "https://github.com/GitCommitt/Laravel-M8"
     ],
     [
+        "project_name"   => "Credit Store",
+        "project_slug"   => "credit-shop",
+        "project_type"   => ["php", "JavaScript", "html-css"],
+        "project_img"    => "/assets/img/project-img/credit-shop/1-credit-shop.jpg",
+        "project_cat"    => ["html-css", "JavaScript", "Cache"],
+        "project_desc"   => "In dit project is er een webshop gemaakt die de data van de producten opslaat in de cache. Met een admin panel om de producten te beheren.",
+        "project_github" => "https://github.com/GitCommitt/credit-shop"
+    ],
+    [
+        "project_name"   => "Amsterdam Museum",
+        "project_slug"   => "muse",
+        "project_type"   => ["php", "html-css"],
+        "project_img"    => "/assets/img/project-img/muse/1-muse.jpg",
+        "project_cat"    => ["PHP", "NFC", "Samenwerking"],
+        "project_desc"   => "Dit project is in opdracht van het Amsterdam Muse Museum. In dit project wordt samengewerkt met meerdere opleidingen.",
+        "project_github" => "https://github.com/GitCommitt/Muse-Museum-M8"
+    ],
+    [
         "project_name"   => "React Project",
         "project_slug"   => "react-project",
         "project_type"   => ["react", "javascript", "html-css"],
@@ -54,15 +72,6 @@ $projects = [
         "project_cat"    => ["Arduino", "Sensoren", "PHP"],
         "project_desc"   => "Dit is mijn eerste IoT-project, waarin ik met een Arduino heb gewerkt. Ik heb veel componenten leren kennen en deze gekoppeld aan een website. Ook is er gebruik gemaakt van een NFC Tagg.",
         "project_github" => "https://github.com/GitCommitt/Duurzaam-Huis"
-    ],
-    [
-        "project_name"   => "Amsterdam Museum",
-        "project_slug"   => "muse",
-        "project_type"   => ["php", "html-css"],
-        "project_img"    => "/assets/img/project-img/muse/1-muse.jpg",
-        "project_cat"    => ["PHP", "NFC", "Samenwerking"],
-        "project_desc"   => "Dit project was een opdracht van het Amsterdam Muse Museum. In dit project wordt samengewerkt met meerdere opleidingen.",
-        "project_github" => "https://github.com/GitCommitt/Muse-Museum-M8"
     ]
 ];
 
