@@ -1,10 +1,12 @@
 <?php
+require_once __DIR__ . '/../project-media.php';
+
 foreach ($projects as $project):
     $projectTypes = array_map('strtolower', $project['project_type']);
     ?>
     <article class="project-card" data-category="<?= implode('|', array_unique($projectTypes))?>">
         <div class="card-image">
-            <img src="<?= $project['project_img'] ?>" alt="<?= $project['project_name'] ?>">
+            <?= renderProjectMedia($project['project_img'], $project['project_name']) ?>
         </div>
         <div class="card-content">
             <div class="card-tags">

@@ -1,28 +1,9 @@
 <?php
 
-$recentWerk = [
-    [
-        "number" => "01",
-        "project_name" => "Arcadegame & IoT",
-        "project_tags" => ["Game", "IoT"],
-        "project_github" => "https://github.com/ghostbusterbob/SpaceYugis"
-    ],
-    [
-        "number" => "02",
-        "project_name" => "Amsterdam Museum",
-        "project_tags" => ["IoT", "3D"],
-        "project_github" => "https://github.com/GitCommitt/Muse-Museum-M8"
-    ],
-    [
-        "number" => "03",
-        "project_name" => "ESPHome Projects",
-        "project_tags" => ["IoT", "ESP32"],
-        "project_github" => "https://github.com/GitCommitt/ESPHome-Projects"
-    ]
-];
+require_once __DIR__ . '/../project-data/recent-project.php';
 
 foreach ($recentWerk as $rWerk): ?>
-    <a target="_blank" class="project" href="<?= $rWerk["project_github"] ?>">
+    <a class="project" href="/project/<?= $rWerk["project_slug"] ?>">
         <span class="project-number"><?= $rWerk["number"] ?></span>
         <span class="project-title"><?= $rWerk["project_name"] ?></span>
         <span class="card-tags">

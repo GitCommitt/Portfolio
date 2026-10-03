@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../../assets/project-media.php';
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -46,30 +47,40 @@
 
             <div class="project-detail-visuals">
                 <div class="project-detail-image">
-                    <a class="project-detail-image-link" href="#project-main-photo">
-                        <img src="<?= $project['project_img'] ?>" alt="Foto van <?= $project['project_name'] ?>">
-                    </a>
-                    <div class="project-lightbox" id="project-main-photo">
-                        <a class="project-lightbox-backdrop" href="#" aria-label="Sluit grote foto"></a>
-                        <div class="project-lightbox-content">
-                            <a class="project-lightbox-close" href="#" aria-label="Sluit grote foto">&times;</a>
-                            <img src="<?= $project['project_img'] ?>" alt="Grote foto van <?= $project['project_name'] ?>">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-detail-gallery">
-                    <?php foreach (($project['project_gallery'] ?? [$project['project_img']]) as $galleryIndex => $galleryImage): ?>
-                        <a class="project-detail-gallery-link" href="#project-photo-<?= $galleryIndex ?>">
-                            <img src="<?= $galleryImage ?>" alt="Foto van <?= $project['project_name'] ?>" loading="lazy">
+                    <?php if (projectMediaType($project['project_img']) === 'video'): ?>
+                        <?= renderProjectMedia($project['project_img'], $project['project_name']) ?>
+                    <?php else: ?>
+                        <a class="project-detail-image-link" href="#project-main-photo">
+                            <?= renderProjectMedia($project['project_img'], 'Foto van ' . $project['project_name']) ?>
                         </a>
-                        <div class="project-lightbox" id="project-photo-<?= $galleryIndex ?>">
+                        <div class="project-lightbox" id="project-main-photo">
                             <a class="project-lightbox-backdrop" href="#" aria-label="Sluit grote foto"></a>
                             <div class="project-lightbox-content">
                                 <a class="project-lightbox-close" href="#" aria-label="Sluit grote foto">&times;</a>
-                                <img src="<?= $galleryImage ?>" alt="Grote foto van <?= $project['project_name'] ?>">
+                                <?= renderProjectMedia($project['project_img'], 'Grote foto van ' . $project['project_name']) ?>
                             </div>
                         </div>
+                    <?php endif; ?>
+                </div>
+
+                <div class="project-detail-gallery">
+                    <?php foreach (($project['project_gallery'] ?? [$project['project_img']]) as $galleryIndex => $galleryMedia): ?>
+                        <?php if (projectMediaType($galleryMedia) === 'video'): ?>
+                            <div class="project-detail-gallery-link">
+                                <?= renderProjectMedia($galleryMedia, $project['project_name']) ?>
+                            </div>
+                        <?php else: ?>
+                            <a class="project-detail-gallery-link" href="#project-photo-<?= $galleryIndex ?>">
+                                <?= renderProjectMedia($galleryMedia, 'Foto van ' . $project['project_name']) ?>
+                            </a>
+                            <div class="project-lightbox" id="project-photo-<?= $galleryIndex ?>">
+                                <a class="project-lightbox-backdrop" href="#" aria-label="Sluit grote foto"></a>
+                                <div class="project-lightbox-content">
+                                    <a class="project-lightbox-close" href="#" aria-label="Sluit grote foto">&times;</a>
+                                    <?= renderProjectMedia($galleryMedia, 'Grote foto van ' . $project['project_name']) ?>
+                                </div>
+                            </div>
+                        <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
             </div>

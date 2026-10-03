@@ -568,7 +568,8 @@ h2 {
     overflow: hidden;
 }
 
-.card-image img {
+.card-image img,
+.card-image video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -751,7 +752,8 @@ h2 {
     border-radius: 16px;
 }
 
-.project-detail-image img {
+.project-detail-image img,
+.project-detail-image video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -776,7 +778,8 @@ h2 {
     cursor: zoom-in;
 }
 
-.project-detail-gallery img {
+.project-detail-gallery img,
+.project-detail-gallery video {
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;

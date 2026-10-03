@@ -18,8 +18,8 @@
                 <h2>Projecten</h2>
                 <div class="filter-bar" style="margin-top: 20px;">
                             <button class="filter-btn active" data-filter="all">Alles</button>
-                            <button class="filter-btn" data-filter="php">PHP</button>
                             <button class="filter-btn" data-filter="javascript">Javascript</button>
+                            <button class="filter-btn" data-filter="php">PHP</button>
                             <button class="filter-btn" data-filter="laravel">Laravel</button>
                             <button class="filter-btn" data-filter="cplusplus">C++</button>
                             <button style="display: none;" class="filter-btn" data-filter="html-css">HTML & CSS</button>
