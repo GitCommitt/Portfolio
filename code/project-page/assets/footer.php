@@ -15,7 +15,7 @@
             <span>Daanpronk570@gmail.com</span>
             <span>→</span>
         </a>
-        <a class="contact-link contact-link-cv" href="/assets/cv/CV-Daan_Pronk.pdf" download>
+        <a class="contact-link contact-link-cv" href="/assets/cv/CV-Daan_pronk.pdf" download>
             <span>Download mijn CV</span>
             <span>↓</span>
         </a>

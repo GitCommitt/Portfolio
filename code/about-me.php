@@ -23,7 +23,7 @@
                     <p class="intro">Mijn naam is Daan Pronk en software is mijn passie. Of het nu gaat om het schrijven van code, het solderen van componenten of het lezen van documentatie: ik wil altijd weten hoe de techniek achter de schermen werkt. Naast deze zelfstandige focus werk ik ontzettend graag in teamverband. Ik geniet ervan om samen ideeën te bedenken, creativiteit te bundelen en de leiding te nemen. Met goede communicatie zorg ik ervoor dat alles vlekkeloos verloopt.</p>
                     <div class="hero-actions">
                         <a class="primary-btn" href="mailto:daanpronk570@gmail.com">Stuur een bericht <span aria-hidden="true">↗</span></a>
-                        <a class="secondary-btn" href="/assets/cv/CV-Daan_Pronk.pdf" download>Download mijn CV ↓</a>
+                        <a class="secondary-btn" href="/assets/cv/CV-Daan_pronk.pdf" download>Download mijn CV ↓</a>
                     </div>
                 </div>
                 <div class="about-portrait">
