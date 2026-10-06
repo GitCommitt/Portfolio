@@ -6,8 +6,8 @@ $project = [
         ['src' => '/assets/img/project-img/react/2-react.jpg', 'type' => 'photo'],
         ['src' => '/assets/img/project-img/react/3-react.jpg', 'type' => 'photo']
     ],
-    'project_cat' => ['React', 'JavaScript'],
-    'project_desc' => 'In dit React-project ben ik voor het eerst met React gaan coderen. Ik heb er verschillende onderdelen in gemaakt, zoals een cookieclicker en het ophalen van gegevens uit een API. Dit project laat zien wat ik met React kan bouwen en hoe ik de basisvaardigheden heb toegepast. Ook heb ik geëxperimenteerd met modulair stylen, waarbij ik een andere manier heb geleerd om de stijl van de website aan te passen.',
+    'project_cat' => ['React', 'JavaScript', 'CSS Modules'],
+    'project_desc' => 'Een interactief project ontwikkeld om de kern van React en modern JavaScript onder de knie te krijgen. Het project bevat diverse werkende componenten, waaronder een cookieclicker-game met state-management en een API-integratie voor het dynamisch ophalen en tonen van externe data. Daarnaast is er gebruikgemaakt van modulaire CSS voor het overzichtelijk stylen van de componenten.',
     'project_github' => 'https://github.com/GitCommitt/React-M7',
     'show_live' => 'block',
     'project_live' => '/react-projects/index.html'

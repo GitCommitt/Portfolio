@@ -7,7 +7,7 @@ $projects = [
         "project_type"   => ["iot", "arduino", "cplusplus"],
         "project_img"    => ["src" => "/assets/img/project-img/jukebox/jukebox.jpg", "type" => "photo"],
         "project_cat"    => ["Arduino", "Sensoren", "Audio"],
-        "project_desc"   => "Dit is een interactieve jukebox die muziek afspeelt aan de hand van welk kleuren muntje er in de jukebox word gedaan.",
+        "project_desc"   => "Een interactieve jukebox die muziek afspeelt op basis van het gekleurde muntje dat je erin schuift.",
         "project_github" => "https://github.com/GitCommitt/DP-Jukebox"
     ],
     [
@@ -15,17 +15,17 @@ $projects = [
         "project_slug"   => "zweden-nederland",
         "project_type"   => ["web", "php", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/zweden/zweden.mp4", "type" => "video"],
-        "project_cat"    => ["PHP", "Internationaal", "Samenwerking"],
-        "project_desc"   => "Dit is een internationale samenwerking met Zweedse studenten en studenten van verschillende opleidingen.",
+        "project_cat"    => ["PHP", "Internationaal", "Platform"],
+        "project_desc"   => "Een internationaal platform ontwikkeld met Zweedse studenten. Ons team bouwde het centrale webplatform dat de games van de overige projectteams bundelt en presenteert.",
         "project_github" => "https://github.com/GitCommitt/Zweden-Project"
     ],
     [
-        "project_name"   => "T-shirts Laravel",
+        "project_name"   => "T-shirts Webshop",
         "project_slug"   => "t-shirts-laravel",
         "project_type"   => ["web", "laravel", "php", "sql"],
         "project_img"    => ["src" => "/assets/img/project-img/laravel/laravel.mp4", "type" => "video"],
         "project_cat"    => ["Laravel", "PHP", "SQL"],
-        "project_desc"   => "Dit is een verzameling van verschillende miniprojecten en een eindproject waarin een T-shirtwebsite is gebouwd met de programmeertaal Laravel.",
+        "project_desc"   => "Een dynamische T-shirt webshop gebouwd met Laravel en SQL. Bezoekers kunnen eenvoudig producten filteren op kleur en categorie.",
         "project_github" => "https://github.com/GitCommitt/Laravel-M8"
     ],
     [
@@ -33,8 +33,8 @@ $projects = [
         "project_slug"   => "credit-shop",
         "project_type"   => ["php", "JavaScript", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/credit-shop/credit-shop.mp4", "type" => "video"],
-        "project_cat"    => ["html-css", "JavaScript", "Cache"],
-        "project_desc"   => "In dit project is er een webshop gemaakt die de data van de producten opslaat in de cache. Met een admin panel om de producten te beheren.",
+        "project_cat"    => ["HTML/CSS", "JavaScript", "Cache"],
+        "project_desc"   => "Een webshop voorzien van een admin panel voor productbeheer, waarbij productdata efficiënt in de cache wordt opgeslagen.",
         "project_github" => "https://github.com/GitCommitt/credit-shop"
     ]
 ];

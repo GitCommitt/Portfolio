@@ -33,7 +33,7 @@
                         <img src="/assets/img/selfie-3.jpg" alt="Portret van Daan Pronk">
                     </div>
                     <div class="hero-skills" aria-labelledby="skills-title">
-                        <h2 id="skills-title">Mijn vaardigheden</h2>
+                        <h2 id="skills-title">Skills</h2>
                         <div class="skills-list">
                             <a class="skill-item" href="/projecten?filter=html-css">HTML & CSS</a>
                             <a class="skill-item" href="/projecten?filter=javascript">JavaScript</a>

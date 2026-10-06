@@ -6,8 +6,8 @@ $project = [
         ['src' => '/assets/img/project-img/zweden/2-zweden.jpg', 'type' => 'photo'],
         ['src' => '/assets/img/project-img/zweden/3-zweden.jpg', 'type' => 'photo']
     ],
-    'project_cat' => ['PHP', 'Internationaal'],
-    'project_desc' => 'In dit project is samengewerkt met Zweedse studenten. Ook is er samengewerkt tussen verschillende opleidingen: Software Developer, Game Developer en Game Artist. De opdracht voor het Software Developer-team was om een website te bouwen rondom de games die door de Game Artists en Game Developers zijn gemaakt. Op de website moest ook informatie staan over het project zelf en over de reden voor deze samenwerking tussen Nederland en Zweden. Dit project duurde zes maanden, waarvan er één maand volledig aan het project is gewerkt. Tijdens dit project vonden er twee uitwisselingen plaats tussen Amsterdam en Stockholm. Nederlandse studenten mochten de twee Zweedse scholen bezoeken en daar samen aan het project werken. De Zweedse studenten zijn ook vier dagen naar Amsterdam gekomen om aan het project te werken.',
+    'project_cat' => ['PHP', 'Internationaal', 'Samenwerking'],
+    'project_desc' => 'Een internationaal samenwerkingsproject tussen Nederlandse en Zweedse studenten van de opleidingen Software Development, Game Development en Game Art. Als Software Development team waren wij verantwoordelijk voor het ontwikkelen van het centrale webplatform. Dit platform bundelt en presenteert de door het team gemaakte games, gecombineerd met achtergrondinformatie over de uitwisseling. Het traject duurde zes maanden, inclusief een intensieve sprintmaand en uitwisselingen tussen Amsterdam en Stockholm waarbij op locatie werd samengewerkt.',
     'project_github' => 'https://github.com/GitCommitt/Zweden-Project',
     'show_live' => 'block',
     'project_live' => '/swe-nld/index.php'

@@ -6,8 +6,8 @@ $project = [
         ["src" => "/assets/img/project-img/macropad-4x4/2-macropad-4x4.jpg", "type" => "photo"],
         ["src" => "/assets/img/project-img/macropad-4x4/3-macropad-4x4.jpg", "type" => "photo"]
     ],
-    "project_cat"    => ["YAML", "ESPHome", "ESP32"],
-    "project_desc"   => "In dit project is een macropad gebouwd waarmee je via Home Assistant automatiseringen kunt aanroepen. Je kunt het macropad ook met eigen code via Bluetooth aan je computer koppelen en bijvoorbeeld als mediacontroller gebruiken. Er zijn vier schakelaars die de automatiseringen aanroepen. Deze schakelaars zijn gekoppeld aan een ESP32-S3 Mini, het brein van het macropad. De microcontroller stuurt alles aan en is verbonden met het thuisnetwerk, waardoor hij contact kan maken met Home Assistant.",
+    "project_cat"    => ["YAML", "ESPHome", "ESP32-S3"],
+    "project_desc"   => "Een custom hardware-macropad aangedreven door een ESP32-S3 Mini microcontroller. Het apparaat is via ESPHome en Wi-Fi gekoppeld aan Home Assistant voor het direct aanroepen van slimme automatiseringen. Daarnaast is de controller te programmeren om via Bluetooth verbinding te maken met een computer, waardoor deze ook kan gebruik worden als fysieke mediacontroller.",
     "project_github" => "https://github.com/GitCommitt/ESPHome-Projects/tree/main/MacroPad",
     "show_live" => "none",
     "project_live" => ""

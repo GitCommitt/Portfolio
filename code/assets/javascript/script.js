@@ -104,4 +104,3 @@ if (autoplayVideos.length > 0 && 'IntersectionObserver' in window) {
         observer.observe(video);
     });
 }
-

@@ -776,6 +776,10 @@ h2 {
     overflow: visible;
 }
 
+.projects-page .projects-grid {
+    grid-auto-rows: 1fr;
+}
+
 .projects-page .card-image {
     position: relative;
     aspect-ratio: 4 / 4.5;
@@ -808,10 +812,15 @@ h2 {
     letter-spacing: 0;
 }
 
+.projects-page .card-content p {
+    flex-grow: 1;
+    margin-bottom: 12px;
+}
+
 .projects-page .card-actions {
     flex-direction: row;
     gap: 24px;
-    padding-top: 14px;
+    margin-top: 0;
     border-top: 1px dashed #c7c9bc;
 }
 
@@ -1373,21 +1382,52 @@ footer {
         margin-bottom: 40px;
     }
 
-    .project-detail-hero,
     .project-detail-info {
         display: block;
     }
 
     .project-detail-hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
         padding-bottom: 70px;
     }
 
+    .project-detail-copy {
+        display: contents;
+    }
+
+    .project-detail-copy .card-tags {
+        order: 1;
+    }
+
+    .project-detail-copy h1 {
+        order: 0;
+    }
+
+    .project-detail-visuals {
+        order: 2;
+        margin-top: 24px;
+    }
+
+    .project-detail-copy .card-actions {
+        order: 3;
+    }
+
+    .project-detail-copy .section-kicker {
+        order: 4;
+    }
+
+    .project-detail-copy .project-detail-text {
+        order: 5;
+    }
+
     .project-detail-image {
-        margin-top: 42px;
+        margin-top: 0;
     }
 
     .project-detail-gallery {
         grid-column: auto;
+        width: 100%;
         margin-top: 8px;
     }
 

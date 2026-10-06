@@ -51,14 +51,14 @@
                     </article>
                     <article class="about-point">
                         <h3>Documentatie lezen</h3>
-                        <p>Ik lees graag documentatie om te begrijpen hoe soft/hardware achter de schermen werkt en hoe ik die goed kan toepassen.</p>
+                        <p>Ik lees graag documentatie om te begrijpen hoe software en hardware achter de schermen werkt en hoe ik die goed kan toepassen.</p>
                     </article>
                 </div>
             </section>
 
             <section class="section about-skills" aria-labelledby="about-skills-title">
                 <div class="section-head">
-                    <h2 id="about-skills-title">Mijn Skills</h2>
+                    <h2 id="about-skills-title">Skills</h2>
                 </div>
                 <div class="skills-list">
                     <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/apache/D22128" alt="" aria-hidden="true" draggable="true">Apache</button>
@@ -78,12 +78,9 @@
                     <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="" aria-hidden="true" draggable="true">WordPress</button>
                     <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="" aria-hidden="true" draggable="true">C++</button>
                     <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/git/F05032" alt="" aria-hidden="true" draggable="true">Git</button>
-                    <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="" aria-hidden="true" draggable="true">MySQL</button>
                     <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/yaml/CB171E" alt="" aria-hidden="true" draggable="true">YAML</button>
                     <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/raspberrypi/C51A4A" alt="" aria-hidden="true" draggable="true">Raspberry Pi</button>
                     <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" aria-hidden="true" draggable="true">JavaScript</button>
-                    <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/phpmyadmin/6C78AF" alt="" aria-hidden="true" draggable="true">phpMyAdmin</button>
-                    <button type="button" class="skill-item"><img src="https://cdn.simpleicons.org/dotenv/ECD53F" alt="" aria-hidden="true" draggable="true">.env</button>
                 </div>
             </section>
 

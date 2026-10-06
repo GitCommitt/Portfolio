@@ -32,7 +32,6 @@ require_once __DIR__ . '/../../assets/project-media.php';
 
                 <div class="project-detail-text">
                     <p><?= $project['project_desc'] ?></p>
-                    <p>Bekijk de code en de technische uitwerking op GitHub voor meer details over het proces, de keuzes en het resultaat.</p>
                 </div>
 
                 <div class="card-actions">

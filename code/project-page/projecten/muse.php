@@ -6,8 +6,8 @@ $project = [
         ['src' => '/assets/img/project-img/muse/2-muse.png', 'type' => 'photo'],
         ['src' => '/assets/img/project-img/muse/3-muse.png', 'type' => 'photo']
     ],
-    'project_cat' => ['PHP', 'html-css'],
-    "project_desc"   => "In dit project wordt samengewerkt door meerdere opleidingen: Media vormgeving en Software Development. Het doel van dit project is om voor de opdrachtgever, het Amsterdam Muse Museum, een installatie te bouwen met een softwarecomponent. Daarin mochten we onze eigen ideeën verwerken. Wij hebben ervoor gekozen om NFC-tags te gebruiken. Ons onderwerp was protest op de Dam. Het team Media vormgeving heeft een platform gebouwd waarop 3D-geprinte poppetjes protesteren die protest borden vasthouden. Op de borden is een NFC-tag geplakt die verwijst naar een deelonderwerp van het hoofdonderwerp. Bij het installeren van de NFC-tags op de bordjes zijn de websites met een Flipper Zero naar de NFC-tags geschreven. Er zijn vijf verschillende websites gebouwd, met op elke website een ander deelonderwerp. Iedereen is individueel aan de slag gegaan met een eigen onderwerp. Op elke website zit een interactief onderdeel om meer over het onderwerp te leren.",
+    'project_cat' => ['PHP', 'NFC', 'Samenwerking'],
+    'project_desc' => 'Een project in opdracht van het Amsterdam Museum rondom het thema \'Protest op de Dam\'. In samenwerking met de opleiding Media Vormgeving is een fysieke installatie gebouwd met 3D-geprinte demonstranten. Elk protestbord bevat een NFC-tag (geprogrammeerd met een Flipper Zero) die linkt naar een specifiek deelonderwerp. Elk van de vijf teamleden heeft hierbij een eigen website gecreëerd voor een specifiek deelonderwerp, waarop bezoekers via interactieve elementen meer over het thema leren.',
     'project_github' => 'https://github.com/GitCommitt/Muse-Museum-Amsterdam',
     'show_live' => 'block',
     'project_live' => '/muse/portal.php'

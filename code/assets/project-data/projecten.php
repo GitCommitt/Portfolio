@@ -7,7 +7,7 @@ $projects = [
         "project_type"   => ["cplusplus"],
         "project_img"    => ["src" => "/assets/img/project-img/jukebox/jukebox.jpg", "type" => "photo"],
         "project_cat"    => ["Arduino", "Sensoren", "Audio"],
-        "project_desc"   => "Dit is een interactieve jukebox die muziek afspeelt aan de hand van welk kleuren muntje er in de jukebox word gedaan.",
+        "project_desc"   => "Een interactieve jukebox die muziek afspeelt op basis van het gekleurde muntje dat je erin schuift.",
         "project_github" => "https://github.com/GitCommitt/DP-Jukebox"
     ],
     [
@@ -15,8 +15,8 @@ $projects = [
         "project_slug"   => "zweden-nederland",
         "project_type"   => ["php", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/zweden/zweden.mp4", "type" => "video"],
-        "project_cat"    => ["PHP", "Internationaal", "Samenwerking"],
-        "project_desc"   => "Dit is een internationale samenwerking met Zweedse studenten en studenten van verschillende opleidingen.",
+        "project_cat"    => ["PHP", "Internationaal", "Platform"],
+        "project_desc"   => "Een internationaal platform ontwikkeld met Zweedse studenten. Ons team bouwde het centrale webplatform dat de games van de overige projectteams bundelt en presenteert.",
         "project_github" => "https://github.com/GitCommitt/Zweden-Project"
     ],
     [
@@ -24,17 +24,17 @@ $projects = [
         "project_slug"   => "arcade-control",
         "project_type"   => ["cplusplus"],
         "project_img"    => ["src" => "/assets/img/project-img/arcade-control/2-arcade-control.jpg", "type" => "photo"],
-        "project_cat"    => ["Microcontroller", "Game", "Samenwerken"],
-        "project_desc"   => "Dit is een project waarbij er zelf arcade controls zijn gemaakt die moesten werken bij een zelfgemaakte game. Een strijd tegen 13 andere teams met de opleding Software Developer en Game Developer.",
-        "project_github" => "https://github.com/GitCommitt/Arcade-control",
+        "project_cat"    => ["Microcontroller", "Game", "Samenwerking"],
+        "project_desc"   => "Zelfgebouwde arcade-controllers gekoppeld aan een eigen game. Ontwikkeld tijdens een competitief project met 13 teams van de opleidingen Software Development en Game Development.",
+        "project_github" => "https://github.com/GitCommitt/Arcade-control"
     ],
     [
-        "project_name"   => "T-shirts Laravel",
+        "project_name"   => "T-shirts Webshop",
         "project_slug"   => "t-shirts-laravel",
         "project_type"   => ["laravel", "php", "SQL", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/laravel/laravel.mp4", "type" => "video"],
-        "project_cat"    => ["Laravel", "PHP"],
-        "project_desc"   => "Dit is een verzameling van verschillende miniprojecten en een eindproject waarin een T-shirtwebsite is gebouwd met de programmeertaal Laravel.",
+        "project_cat"    => ["Laravel", "PHP", "SQL"],
+        "project_desc"   => "Een dynamische T-shirt webshop gebouwd met Laravel en SQL. Bezoekers kunnen eenvoudig producten filteren op kleur en categorie.",
         "project_github" => "https://github.com/GitCommitt/Laravel-M8"
     ],
     [
@@ -42,8 +42,8 @@ $projects = [
         "project_slug"   => "credit-shop",
         "project_type"   => ["php", "JavaScript", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/credit-shop/credit-shop.mp4", "type" => "video"],
-        "project_cat"    => ["html-css", "JavaScript", "Cache"],
-        "project_desc"   => "In dit project is er een webshop gemaakt die de data van de producten opslaat in de cache. Met een admin panel om de producten te beheren.",
+        "project_cat"    => ["HTML/CSS", "JavaScript", "Cache"],
+        "project_desc"   => "Een webshop voorzien van een admin panel voor productbeheer, waarbij productdata efficiënt in de cache wordt opgeslagen.",
         "project_github" => "https://github.com/GitCommitt/credit-shop"
     ],
     [
@@ -52,7 +52,7 @@ $projects = [
         "project_type"   => ["php", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/muse/1-muse.jpg", "type" => "photo"],
         "project_cat"    => ["PHP", "NFC", "Samenwerking"],
-        "project_desc"   => "Dit project is in opdracht van het Amsterdam Muse Museum. In dit project wordt samengewerkt met meerdere opleidingen.",
+        "project_desc"   => "Een webproject in opdracht van het Amsterdam Museum, met een slimme integratie van PHP en NFC-technologie.",
         "project_github" => "https://github.com/GitCommitt/Muse-Museum-Amsterdam"
     ],
     [
@@ -61,7 +61,7 @@ $projects = [
         "project_type"   => ["react", "javascript", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/react/react.mp4", "type" => "video"],
         "project_cat"    => ["React", "JavaScript"],
-        "project_desc"   => "In dit project zijn verschillende componenten samengebracht. Hiervoor is React gebruikt. Dit was ook de eerste keer dat ik met React werkte.",
+        "project_desc"   => "Mijn eerste project gebouwd met React, gericht op het bouwen van herbruikbare UI-componenten en interactieve functionaliteiten.",
         "project_github" => "https://github.com/GitCommitt/React-M7"
     ],
     [
@@ -70,7 +70,7 @@ $projects = [
         "project_type"   => ["yaml", "esphome"],
         "project_img"    => ["src" => "/assets/img/project-img/macropad-4x4/1-macropad-4x4.jpg", "type" => "photo"],
         "project_cat"    => ["YAML", "ESPHome", "ESP32"],
-        "project_desc"   => "Dit is een zelfgemaakt 3D-printproject. Het werkt met een ESP32 en kan worden gekoppeld aan ESPHome op Home Assistant, waarmee je automatiseringen aan elke knop kunt toewijzen.",
+        "project_desc"   => "Een custom 3D-geprint macropad aangedreven door een ESP32. Volledig geïntegreerd met ESPHome en Home Assistant voor slimme automatiseringen.",
         "project_github" => "https://github.com/GitCommitt/ESPHome-Projects/tree/main/MacroPad"
     ],
     [
@@ -79,7 +79,7 @@ $projects = [
         "project_type"   => ["php", "cplusplus", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/duurzaam-huis/duurzaam-huis.jpg", "type" => "photo"],
         "project_cat"    => ["Arduino", "Sensoren", "PHP"],
-        "project_desc"   => "Dit is mijn eerste IoT-project, waarin ik met een Arduino heb gewerkt. Ik heb veel componenten leren kennen en deze gekoppeld aan een website. Ook is er gebruik gemaakt van een NFC Tagg.",
+        "project_desc"   => "Mijn eerste IoT-project op basis van een Arduino en diverse sensoren, gekoppeld aan een PHP-webinterface en NFC-interactie.",
         "project_github" => "https://github.com/GitCommitt/Duurzaam-Huis"
     ]
 ];

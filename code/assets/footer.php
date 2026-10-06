@@ -1,6 +1,6 @@
 <section class="section contact" id="contact">
     <div>
-        <h2>Meer contacten<br>van mij</h2>
+        <h2>Neem contact<br>op</h2>
     </div>
     <div class="contact-links">
         <a target="_blank" class="contact-link" href="https://github.com/GitCommitt">
