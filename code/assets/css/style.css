@@ -62,7 +62,7 @@ footer {
     align-items: center;
     gap: 18px;
     padding: 10px 16px;
-    background: var(--white);
+    background: #ffffffd8;
     border: 1px solid rgba(17, 18, 23, 0.08);
     border-radius: 999px;
 }
@@ -137,6 +137,26 @@ footer {
     width: min(1480px, calc(100% - 48px));
     margin: 0 auto;
 }
+    overflow-x: hidden;
+    zoom: 135%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    overflow: clip;
+}
+
+.topbar,
+.hero,
+.section,
+footer {
+    width: min(1480px, calc(100% - 48px));
+    margin: 0 auto;
+}
 
 .topbar {
     position: sticky;
@@ -153,9 +173,12 @@ footer {
     align-items: center;
     gap: 18px;
     padding: 10px 16px;
-    background: var(--white);
-    border: 1px solid rgba(17, 18, 23, 0.08);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 999px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .topbar a {
