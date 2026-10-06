@@ -6,7 +6,7 @@ foreach ($projects as $project):
     ?>
     <article class="project-card" data-category="<?= implode('|', array_unique($projectTypes))?>">
         <div class="card-image">
-            <?= renderProjectMedia($project['project_img'], $project['project_name']) ?>
+            <?= renderProjectMedia($project['project_img'], $project['project_name'], 'project-card-video') ?>
         </div>
         <div class="card-content">
             <div class="card-tags">

@@ -58,7 +58,7 @@
                     <?php include __DIR__ . "/assets/cards/recent-werk-card.php" ?>
                 </div>
             </section>
-            <section class="section" id="projecten">
+            <section class="section projects-page" id="projecten">
                 <div class="section-head">
                     <h2>Beste projecten</h2>
                     <div class="filter-bar">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="projects-grid">
+                <div class="projects-grid" style="border-top: 1px solid var(--line); padding: 72px 0;">
                     <?php include __DIR__ . "/assets/cards/project-card.php" ?>
                 </div>
 

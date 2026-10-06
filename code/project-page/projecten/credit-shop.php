@@ -1,7 +1,7 @@
 <?php
 $project = [
     "project_name"   => "Credit Shop",
-    "project_img"    => ["src" => "/assets/img/project-img/credit-shop/1-credit-shop.jpg", "type" => "photo"],
+    "project_img"    => ["src" => "/assets/img/project-img/credit-shop/1-credit-shop.mp4", "type" => "photo"],
     "project_gallery" => [
         ["src" => "/assets/img/project-img/credit-shop/2-credit-shop.jpg", "type" => "photo"],
         ["src" => "/assets/img/project-img/credit-shop/3-credit-shop.jpg", "type" => "photo"]

@@ -58,3 +58,50 @@ if (rotatingImage && aboutImages.length > 1) {
         }, 5000);
     });
 }
+
+const skillStage = document.querySelector('.about-skills .skills-list');
+
+if (skillStage) {
+    skillStage.querySelectorAll('.skill-item').forEach(skill => {
+        skill.style.position = 'static';
+        skill.style.left = '';
+        skill.style.top = '';
+        skill.style.margin = '0';
+        skill.style.transform = 'none';
+        skill.style.cursor = 'default';
+    });
+}
+
+const autoplayVideos = document.querySelectorAll('video.project-card-video');
+
+if (autoplayVideos.length > 0 && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const video = entry.target;
+            if (!video || typeof video.play !== 'function') {
+                return;
+            }
+
+            if (entry.isIntersecting) {
+                video.muted = true;
+                video.play().catch(() => {});
+                return;
+            }
+
+            video.pause();
+        });
+    }, {
+        threshold: 0.4,
+        rootMargin: '0px 0px -10% 0px'
+    });
+
+    autoplayVideos.forEach(video => {
+        video.setAttribute('playsinline', 'true');
+        video.setAttribute('muted', 'true');
+        video.setAttribute('autoplay', 'true');
+        video.setAttribute('loop', 'true');
+        video.removeAttribute('controls');
+        observer.observe(video);
+    });
+}
+

@@ -16,6 +16,12 @@ function renderProjectMedia($media, $alt = '', $class = '')
     $classAttribute = $class === '' ? '' : ' class="' . htmlspecialchars($class, ENT_QUOTES, 'UTF-8') . '"';
 
     if (projectMediaType($media) === 'video') {
+        $isCardVideo = strpos($class, 'project-card-video') !== false;
+
+        if ($isCardVideo) {
+            return '<video class="project-card-video" muted autoplay loop playsinline preload="auto" disablepictureinpicture controlslist="nodownload noplaybackrate nofullscreen"><source src="' . $source . '"></video>';
+        }
+
         return '<video' . $classAttribute . ' controls playsinline preload="metadata"><source src="' . $source . '"></video>';
     }
 
