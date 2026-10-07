@@ -27,14 +27,5 @@ $projects = [
         "project_cat"    => ["Laravel", "PHP", "SQL"],
         "project_desc"   => "Een dynamische T-shirt webshop gebouwd met Laravel en SQL. Bezoekers kunnen eenvoudig producten filteren op kleur en categorie.",
         "project_github" => "https://github.com/GitCommitt/Laravel-M8"
-    ],
-    [
-        "project_name"   => "Credit Store",
-        "project_slug"   => "credit-shop",
-        "project_type"   => ["php", "JavaScript", "html-css"],
-        "project_img"    => ["src" => "/assets/img/project-img/credit-shop/credit-shop.mp4", "type" => "video"],
-        "project_cat"    => ["HTML/CSS", "JavaScript", "Cache"],
-        "project_desc"   => "Een webshop voorzien van een admin panel voor productbeheer, waarbij productdata efficiënt in de cache wordt opgeslagen.",
-        "project_github" => "https://github.com/GitCommitt/credit-shop"
     ]
 ];

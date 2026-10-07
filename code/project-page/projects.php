@@ -28,7 +28,7 @@
                 <button style="display: none;" class="filter-btn" data-filter="yaml">YAML</button>
             </div>
             <br>
-            <div class="projects-grid" style="border-top: 1px solid var(--line); padding: 72px 0;">
+            <div class="projects-grid" style="border-top: 1px solid var(--line);">
                 <?php include __DIR__ . "/../assets/cards/project-card.php" ?>
             </div>
         </div>
