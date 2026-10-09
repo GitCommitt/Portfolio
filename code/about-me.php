@@ -31,7 +31,7 @@
                         <img class="about-rotating-image" src="/assets/img/selfie-1.jpg" alt="Portret van Daan Pronk">
                     </div>
                     <div class="about-portrait-meta">
-                        <span>Amsterdam, NL</span>
+                        <span>Zaandam, NL</span>
                     </div>
                 </div>
             </header>

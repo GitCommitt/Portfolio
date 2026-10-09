@@ -15,7 +15,7 @@ $projects = [
         "project_slug"   => "zweden-nederland",
         "project_type"   => ["php", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/zweden/zweden.mp4", "type" => "video"],
-        "project_cat"    => ["PHP", "Internationaal", "Platform"],
+        "project_cat"    => ["PHP", "Internationaal", "Samenwerking"],
         "project_desc"   => "Een internationaal platform ontwikkeld met Zweedse studenten. Ons team bouwde het centrale webplatform dat de games van de overige projectteams bundelt en presenteert.",
         "project_github" => "https://github.com/GitCommitt/Zweden-Project"
     ],
@@ -24,7 +24,7 @@ $projects = [
         "project_slug"   => "arcade-control",
         "project_type"   => ["cplusplus"],
         "project_img"    => ["src" => "/assets/img/project-img/arcade-control/2-arcade-control.jpg", "type" => "photo"],
-        "project_cat"    => ["Microcontroller", "Game", "Samenwerking"],
+        "project_cat"    => ["Arduino", "Opdrachtgever", "Samenwerking"],
         "project_desc"   => "Zelfgebouwde arcade-controllers gekoppeld aan een eigen game. Ontwikkeld tijdens een competitief project met 13 teams van de opleidingen Software Development en Game Development.",
         "project_github" => "https://github.com/GitCommitt/Arcade-control"
     ],
@@ -51,7 +51,7 @@ $projects = [
         "project_slug"   => "muse",
         "project_type"   => ["php", "html-css"],
         "project_img"    => ["src" => "/assets/img/project-img/muse/1-muse.jpg", "type" => "photo"],
-        "project_cat"    => ["PHP", "NFC", "Samenwerking"],
+        "project_cat"    => ["PHP", "Opdrachtgever", "Samenwerking"],
         "project_desc"   => "Een webproject in opdracht van het Amsterdam Museum, met een slimme integratie van PHP en NFC-technologie.",
         "project_github" => "https://github.com/GitCommitt/Muse-Museum-Amsterdam"
     ],
@@ -72,6 +72,24 @@ $projects = [
         "project_cat"    => ["YAML", "ESPHome", "ESP32"],
         "project_desc"   => "Een custom 3D-geprint macropad aangedreven door een ESP32. Volledig geïntegreerd met ESPHome en Home Assistant voor slimme automatiseringen.",
         "project_github" => "https://github.com/GitCommitt/ESPHome-Projects/tree/main/MacroPad"
+    ],
+    [
+        "project_name"   => "Music Library",
+        "project_slug"   => "music-library",
+        "project_type"   => ["php", "SQL", "html-css"],
+        "project_img"    => ["src" => "/assets/img/project-img/music-library/music-library.mp4", "type" => "video"],
+        "project_cat"    => ["PHP", "SQL", "Bootstrap"],
+        "project_desc"   => "Een online muziekbibliotheek gekoppeld aan een SQL-database, waarin bezoekers via een ingebouwde zoekfunctie direct door opgeslagen albums kunnen navigeren. De responsive interface is opgebouwd met Bootstrap.",
+        'project_github' => 'https://github.com/GitCommitt/Music-Library',
+    ],
+    [
+        "project_name"   => "RoomUs",
+        "project_slug"   => "roomus",
+        "project_type"   => ["php", "html-css"],
+        "project_img"    => ["src" => "/assets/img/project-img/roomus/roomus.mp4", "type" => "video"],
+        'project_cat'    => ['PHP', 'JavaScript', 'Opdrachtgever'],
+        "project_desc"   => "Een herontworpen webplatform voor RoomUs, waarbij een verouderde site is getransformeerd tot een moderne hub met verbeterde navigatie en interactieve elementen.",
+        "project_github" => "https://github.com/GitCommitt/RoomUs"
     ],
     [
         "project_name"   => "Duurzaam Huis",

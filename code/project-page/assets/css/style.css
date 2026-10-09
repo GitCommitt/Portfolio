@@ -62,12 +62,9 @@ footer {
     align-items: center;
     gap: 18px;
     padding: 10px 16px;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: var(--white);
+    border: 1px solid rgba(17, 18, 23, 0.08);
     border-radius: 999px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .topbar a {
@@ -80,6 +77,17 @@ footer {
 
 .topbar a:hover {
     color: #111217;
+}
+
+.nav-badge {
+    display: inline-grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(17, 18, 23, 0.06);
+    color: rgba(23, 24, 27, 0.9);
+    font-size: 11px;
 }
 
 .hero {
@@ -189,6 +197,17 @@ footer {
     border-top: 1px solid var(--text);
 }
 
+.about-point {
+    padding: 18px 0 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.about-point-number {
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 11px;
+}
+
 .about-point h3 {
     margin: 40px 0 10px;
     font-size: 24px;
@@ -243,6 +262,7 @@ footer {
     margin-top: 18px;
     padding-bottom: 14px;
     overflow: visible;
+    border-bottom: 1px solid var(--line);
 }
 
 .about-skills .skill-item {
@@ -283,9 +303,27 @@ footer {
     outline-offset: 3px;
 }
 
+.about-skills .skill-item.is-dragging {
+    z-index: 1;
+    cursor: grabbing;
+    box-shadow: 0 8px 20px rgba(23, 24, 27, .2);
+}
+
 .skill-item:hover {
     border-color: var(--text);
     color: var(--text);
+}
+
+.hero-label {
+    margin: 0 0 18px;
+    color: rgba(23, 24, 27, 0.8);
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: .01em;
+}
+
+.hero-label span {
+    font-size: 1.1em;
 }
 
 h1 {
@@ -347,6 +385,10 @@ h1 {
     border-top: 1px solid var(--line);
 }
 
+.section-head {
+    margin-bottom: 35px;
+}
+
 .section-kicker {
     margin: 0 0 18px;
     color: var(--accent);
@@ -376,7 +418,8 @@ h2 {
     border-bottom: 1px solid var(--line);
 }
 
-.project-number {
+.project-number,
+.project-type {
     color: var(--muted);
     font-family: var(--mono);
     font-size: 11px;
@@ -394,6 +437,87 @@ h2 {
 
 .project:hover .project-title {
     color: var(--accent);
+}
+
+.iot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 30px;
+}
+
+.iot-card {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--text);
+    padding-top: 14px;
+}
+
+.iot-photo {
+    aspect-ratio: 16 / 10;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: #e7e8e8;
+    border: 1px solid var(--line);
+}
+
+.iot-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.iot-card h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    letter-spacing: -.05em;
+}
+
+.iot-card p {
+    min-height: 52px;
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.project-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.project-button {
+    width: 50%;
+    margin-bottom: 24px;
+    padding: 10px 13px;
+    border: 1px solid var(--line);
+    font-family: var(--mono);
+    font-size: 11px;
+    background: transparent;
+    border: 1px solid rgba(17, 17, 20, 0.18);
+    color: rgba(17, 17, 20, 0.9);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-button span {
+    color: var(--accent);
+}
+
+.project-button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.iot-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 11px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
 }
 
 .contact {
@@ -435,6 +559,10 @@ h2 {
     background: var(--accent);
     border-color: var(--accent);
     color: var(--white);
+}
+
+.github contact-link {
+    color: grey;
 }
 
 .contact-link:hover {
@@ -479,10 +607,10 @@ h2 {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 36px 24px;
+    gap: 48px 36px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .projects-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 28px;
@@ -507,13 +635,9 @@ h2 {
     overflow: visible;
 }
 
-.projects-page .projects-grid {
-    grid-auto-rows: 1fr;
-}
-
 .projects-page .card-image {
     position: relative;
-    aspect-ratio: 4 / 4.5;
+    aspect-ratio: 4 / 5;
     border-radius: 4px;
 }
 
@@ -543,15 +667,10 @@ h2 {
     letter-spacing: 0;
 }
 
-.projects-page .card-content p {
-    flex-grow: 1;
-    margin-bottom: 12px;
-}
-
 .projects-page .card-actions {
     flex-direction: row;
     gap: 24px;
-    margin-top: 0;
+    padding-top: 14px;
     border-top: 1px dashed #c7c9bc;
 }
 
@@ -596,6 +715,19 @@ h2 {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+}
+
+.card-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(23, 24, 27, 0.75);
+    backdrop-filter: blur(4px);
+    color: var(--white);
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 6px;
 }
 
 .card-content {
@@ -735,6 +867,18 @@ h2 {
     margin: 28px 0 12px;
 }
 
+.project-detail-intro {
+    max-width: 560px;
+    margin: 28px 0 0;
+    color: rgba(23, 24, 27, 0.74);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.project-detail-actions {
+    margin-top: 32px;
+}
+
 .project-detail-visuals {
     display: flex;
     flex-direction: column;
@@ -754,12 +898,6 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.project-detail-image video,
-.project-detail-gallery video {
-    object-fit: contain;
-    background: #17181b;
 }
 
 .project-detail-image-link {
@@ -847,6 +985,19 @@ h2 {
     text-decoration: none;
 }
 
+.project-detail-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    padding-top: 70px;
+    border-top: 1px solid var(--line);
+}
+
+.project-detail-info h2 {
+    max-width: 420px;
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+}
+
 .project-detail-text {
     max-width: 560px;
     color: var(--muted);
@@ -887,6 +1038,7 @@ footer {
         margin-right: auto;
     }
 
+    .about-page .hero-label,
     .about-page .section-kicker {
         text-align: center;
     }
@@ -1020,7 +1172,12 @@ footer {
         gap: 10px;
     }
 
-    .projects-grid {
+    .project-type {
+        display: none;
+    }
+
+    .projects-grid,
+    .iot-grid {
         grid-template-columns: 1fr;
         gap: 45px;
     }
@@ -1038,6 +1195,10 @@ footer {
         flex: 1 1 auto;
     }
 
+    .iot-photo {
+        min-height: 220px;
+    }
+
     .contact {
         display: block;
     }
@@ -1047,10 +1208,12 @@ footer {
         margin-top: 35px;
     }
 
+    .project-buttons,
     .card-actions {
         flex-direction: column;
     }
 
+    .project-button,
     .btn-card {
         width: 100%;
     }
@@ -1063,49 +1226,26 @@ footer {
         margin-bottom: 40px;
     }
 
+    .project-detail-hero,
+    .project-detail-info {
+        display: block;
+    }
+
     .project-detail-hero {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
         padding-bottom: 70px;
     }
 
-    .project-detail-copy {
-        display: contents;
-    }
-
-    .project-detail-copy .card-tags {
-        order: 1;
-    }
-
-    .project-detail-copy h1 {
-        order: 0;
-    }
-
-    .project-detail-visuals {
-        order: 2;
-        margin-top: 24px;
-    }
-
-    .project-detail-copy .card-actions {
-        order: 3;
-    }
-
-    .project-detail-copy .section-kicker {
-        order: 4;
-    }
-
-    .project-detail-copy .project-detail-text {
-        order: 5;
-    }
-
     .project-detail-image {
-        margin-top: 0;
+        margin-top: 42px;
     }
 
     .project-detail-gallery {
         grid-column: auto;
-        width: 100%;
         margin-top: 8px;
+    }
+
+    .project-detail-info {
+        padding-top: 52px;
     }
 
     .project-detail-text {

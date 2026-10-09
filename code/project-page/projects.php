@@ -21,14 +21,14 @@
                 <button class="filter-btn" data-filter="javascript">Javascript</button>
                 <button class="filter-btn" data-filter="php">PHP</button>
                 <button class="filter-btn" data-filter="laravel">Laravel</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
                 <button class="filter-btn" data-filter="cplusplus">C++</button>
                 <button style="display: none;" class="filter-btn" data-filter="html-css">HTML & CSS</button>
                 <button style="display: none;" class="filter-btn" data-filter="react">React</button>
-                <button style="display: none;" class="filter-btn" data-filter="sql">SQL</button>
                 <button style="display: none;" class="filter-btn" data-filter="yaml">YAML</button>
             </div>
             <br>
-            <div class="projects-grid" style="border-top: 1px solid var(--line);">
+            <div class="projects-grid">
                 <?php include __DIR__ . "/../assets/cards/project-card.php" ?>
             </div>
         </div>

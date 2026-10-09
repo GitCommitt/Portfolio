@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="projects-grid" style="border-top: 1px solid var(--line);">
+                <div class="projects-grid">
                     <?php include __DIR__ . "/assets/cards/project-card.php" ?>
                 </div>
 
@@ -78,7 +78,7 @@
             </section>
 
             <?php include __DIR__ . "/assets/footer.php" ?>
-            
+
         </main>
     </div>
 </body>
