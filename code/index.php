@@ -42,7 +42,7 @@ $hardwareProjectsForShowcase = $getShowcaseProjects($showcaseImages["hardware"])
             <?php include __DIR__ . "/assets/header.php" ?>
             <header class="hero" id="home">
                 <div class="hero-copy">
-                    <h2>Daan Pronk</h2>
+                    <h2>Daan </h2>
                     <h1>Software Developer</h1>
                     <p class="intro">3ᵉ Jaars student aan het Mediacollege Amsterdam.</p>
                     <div class="hero-actions">

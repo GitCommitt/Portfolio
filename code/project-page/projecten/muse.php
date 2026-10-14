@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/../assets/project-live-url.php';
+
 $project = [
     'project_name' => 'Amsterdam Museum',
     'project_img' => ['src' => '/assets/img/project-img/muse/1-muse.jpg', 'type' => 'photo'],
@@ -10,7 +12,7 @@ $project = [
     'project_desc' => 'Een project in opdracht van het Amsterdam Museum rondom het thema \'Protest op de Dam\'. In samenwerking met de opleiding Media Vormgeving is een fysieke installatie gebouwd met 3D-geprinte demonstranten. Elk protestbord bevat een NFC-tag (geprogrammeerd met een Flipper Zero) die linkt naar een specifiek deelonderwerp. Elk van de vijf teamleden heeft hierbij een eigen website gecreëerd voor een specifiek deelonderwerp, waarop bezoekers via interactieve elementen meer over het thema leren.',
     'project_github' => 'https://github.com/GitCommitt/Muse-Museum-Amsterdam',
     'show_live' => 'block',
-    'project_live' => '/muse/portal.php'
+    'project_live' => projectLiveUrl('muse')
 ];
 
 include __DIR__ . '/project-detail.php';
