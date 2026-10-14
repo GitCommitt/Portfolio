@@ -1,4 +1,27 @@
 <?php include __DIR__ . "/assets/project-data/home-projects.php" ?>
+<?php
+$showcaseProjects = static function () {
+    include __DIR__ . "/assets/project-data/projecten.php";
+    return $projects;
+};
+$allProjectsForShowcase = $showcaseProjects();
+$showcaseImages = require __DIR__ . "/assets/project-data/showcase-projects.php";
+$projectsBySlug = array_column($allProjectsForShowcase, null, "project_slug");
+$getShowcaseProjects = static function ($images) use ($projectsBySlug) {
+    $showcaseProjects = [];
+    foreach ($images as $slug => $image) {
+        if (!isset($projectsBySlug[$slug])) {
+            throw new UnexpectedValueException("Showcase project '{$slug}' is missing from the project catalog.");
+        }
+        $project = $projectsBySlug[$slug];
+        $project["showcase_image"] = $image;
+        $showcaseProjects[] = $project;
+    }
+    return $showcaseProjects;
+};
+$backendProjectsForShowcase = $getShowcaseProjects($showcaseImages["backend"]);
+$hardwareProjectsForShowcase = $getShowcaseProjects($showcaseImages["hardware"]);
+?>
 
 <!DOCTYPE html>
 <html lang="nl">
@@ -35,39 +58,47 @@
                     <div class="hero-skills" aria-labelledby="skills-title">
                         <h2 id="skills-title">Skills</h2>
                         <div class="skills-list">
-                            <a class="skill-item" href="/projecten?filter=html-css">HTML & CSS</a>
-                            <a class="skill-item" href="/projecten?filter=javascript">JavaScript</a>
                             <a class="skill-item" href="/projecten?filter=php">PHP</a>
+                            <a class="skill-item" href="/projecten?filter=sql">SQL</a>
+                            <a class="skill-item" href="/projecten?filter=javascript">JavaScript</a>
                             <a class="skill-item" href="/projecten?filter=cplusplus">C++</a>
                             <a class="skill-item" href="/projecten?filter=laravel">Laravel</a>
-                            <a class="skill-item" href="/projecten?filter=react">React</a>
-                            <a class="skill-item" href="/projecten?filter=sql">SQL</a>
-                            <a class="skill-item" href="/projecten?filter=yaml">YAML</a>
-                            <a class="skill-item" href="/projecten?filter=all">Git</a>
                         </div>
                     </div>
                 </div>
             </header>
-            <section class="section">
-                <div class="section-head">
-                    <div>
-                        <h2>Recent werk</h2>
+            <section class="section focus-showcase" aria-label="Mijn interesses en projecten">
+                <article class="focus-panel" aria-labelledby="backend-title">
+                    <h2 id="backend-title">Focus op Backend Development</h2>
+                    <p class="focus-description">Ik vind het leuk om aan de achterkant van websites te werken met databases en connecties om te zorgen dat alles goed loopt.</p>
+                    <div class="focus-gallery" aria-label="Backendprojecten">
+                        <?php foreach ($backendProjectsForShowcase as $project): ?>
+                            <a class="focus-photo" href="/project/<?= $project["project_slug"] ?>" aria-label="Bekijk <?= $project["project_name"] ?>">
+                                <img src="<?= $project["showcase_image"] ?>" alt="" loading="lazy">
+                                <span><?= $project["project_name"] ?></span>
+                            </a>
+                        <?php endforeach; ?>
                     </div>
-                </div>
-                <div class="project-list">
-                    <?php include __DIR__ . "/assets/cards/recent-werk-card.php" ?>
-                </div>
+                    <a class="focus-all-link" href="/projecten?filter=backend">Bekijk alle backendprojecten <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="focus-panel" aria-labelledby="hardware-title">
+                    <h2 id="hardware-title">Mijn passie voor hardware</h2>
+                    <p class="focus-description">Ik vind het leuk om aan hardwareprojecten te werken en iets speciaals te creëren dat bruikbaar is en er goed uitziet.</p>
+                    <div class="focus-gallery" aria-label="Hardwareprojecten">
+                        <?php foreach ($hardwareProjectsForShowcase as $project): ?>
+                            <a class="focus-photo" href="/project/<?= $project["project_slug"] ?>" aria-label="Bekijk <?= $project["project_name"] ?>">
+                                <img src="<?= $project["showcase_image"] ?>" alt="" loading="lazy">
+                                <span><?= $project["project_name"] ?></span>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                    <a class="focus-all-link" href="/projecten?filter=hardware">Bekijk alle hardwareprojecten <span aria-hidden="true">↗</span></a>
+                </article>
             </section>
             <section class="section projects-page" id="projecten">
                 <div class="section-head">
                     <h2>Beste projecten</h2>
-                    <div class="filter-bar">
-                        <button class="filter-btn active" data-filter="all">Alles</button>
-                        <button class="filter-btn" data-filter="web">Web & Apps</button>
-                        <button class="filter-btn" data-filter="iot">IoT & HW</button>
-                    </div>
                 </div>
-
                 <div class="projects-grid">
                     <?php include __DIR__ . "/assets/cards/project-card.php" ?>
                 </div>

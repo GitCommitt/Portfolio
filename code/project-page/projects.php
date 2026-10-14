@@ -17,6 +17,10 @@
         <div class="section-head" style="display: flex; flex-direction:column; align-items:center; ">
             <h2>Projecten</h2>
             <div class="filter-bar" style="margin-top: 20px;">
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+            <div class="filter-bar">
                 <button class="filter-btn active" data-filter="all">Alles</button>
                 <button class="filter-btn" data-filter="javascript">Javascript</button>
                 <button class="filter-btn" data-filter="php">PHP</button>
