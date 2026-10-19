@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../assets/project-live-url.php';
+require_once __DIR__ . '/../../assets/project-live-url.php';
 
 $project = [
     "project_name"   => "Credit Shop",
