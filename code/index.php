@@ -13,6 +13,7 @@
     <title>Portfolio | Daan Pronk</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <script defer src="/assets/javascript/script.js"></script>
+<script defer src="https://umami.daanpronk.com/script.js" data-website-id="8d4636aa-af38-4f33-bbc7-7a0250185c9b"></script>
 </head>
 
 <body>
